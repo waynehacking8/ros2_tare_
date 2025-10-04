@@ -20,7 +20,7 @@ ros2_tare_/
 
 ```bash
 cd ~
-mkdir -p ros2_tare_
+git clone https://github.com/waynehacking8/ros2_tare_.git
 cd ros2_tare_
 
 # 下載開發環境
@@ -163,11 +163,8 @@ A: 確認：
 2. 兩個 launch 文件都在運行
 3. 檢查是否有錯誤訊息
 
-## 停止系統
-
-在每個終端按 `Ctrl+C` 停止運行。
-
-如果需要強制終止所有進程：
+### Q: 系統崩潰或需要重啟
+A: 強制終止所有進程：
 ```bash
 killall -9 gzserver gzclient rviz2
 ```
@@ -196,3 +193,20 @@ killall -9 gzserver gzclient rviz2
 ## 授權
 
 請參閱各專案的 LICENSE 文件。
+
+---
+
+## 快速啟動指令
+
+```bash
+# 終端 1
+cd ~/ros2_tare_/autonomous_exploration_development_environment
+source install/setup.bash
+export GAZEBO_MODEL_PATH=$PWD/src/vehicle_simulator/mesh:$GAZEBO_MODEL_PATH
+ros2 launch vehicle_simulator system_garage.launch
+
+# 終端 2
+cd ~/ros2_tare_/tare_planner
+source install/setup.bash
+ros2 launch tare_planner explore_garage.launch
+```

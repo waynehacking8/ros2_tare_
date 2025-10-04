@@ -1,6 +1,0 @@
-[submodule "autonomous_exploration_development_environment"]
-	path = autonomous_exploration_development_environment
-	url = https://github.com/cmu-exploration/autonomous_exploration_development_environment.git
-[submodule "tare_planner"]
-	path = tare_planner
-	url = https://github.com/caochao39/tare_planner.git
