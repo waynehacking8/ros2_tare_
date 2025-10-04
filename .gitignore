@@ -1,0 +1,29 @@
+# ROS2 build artifacts
+build/
+install/
+log/
+
+# Downloaded environment meshes (too large for GitHub)
+autonomous_exploration_development_environment/src/vehicle_simulator/mesh/campus/
+autonomous_exploration_development_environment/src/vehicle_simulator/mesh/forest/
+autonomous_exploration_development_environment/src/vehicle_simulator/mesh/garage/
+autonomous_exploration_development_environment/src/vehicle_simulator/mesh/indoor/
+autonomous_exploration_development_environment/src/vehicle_simulator/mesh/tunnel/
+!autonomous_exploration_development_environment/src/vehicle_simulator/mesh/download_environments.sh
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# System
+.DS_Store
+Thumbs.db
